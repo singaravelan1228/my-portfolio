@@ -1,0 +1,254 @@
+/* Custom CSS for styling and animations */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+ font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  line-height: 1.6;
+}
+.navbar {
+  background: linear-gradient(135deg, #0d0e0e, #354561);
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.nav-links a:hover {
+  color: #d1d5db;
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.menu-toggle svg {
+  width: 24px;
+  height: 24px;
+}
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+.home-video-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.7);
+}
+.bg-gray {
+  background: #f3f4f6;
+}
+.bg-light-gray {
+  background: #e5e7eb;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+}
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+.slide-in {
+  animation: slideIn 0.5s ease-out;
+}
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.btn {
+  background: #1e40af;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+}
+.btn:hover {
+  background: #1e3a8a;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-group label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Blinker', sans-serif;
+}
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.skills-grid {
+  /* display: flex;
+  justify-content: center;
+  justify-content:space-around; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+/* Footer Styles */
+.footer {
+  background: linear-gradient(135deg, #0d0e0e, #7c838f);
+  color: white;
+  padding: 2rem 1rem;
+}
+.footer-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.footer-stats .card {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+}
+.footer-stats h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.footer-stats p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+.social-link {
+  color: white;
+  text-decoration: none;
+}
+.social-link svg {
+  width: 24px;
+  height: 24px;
+}
+.footer-text {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #0d0e0e, #7c838f);
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 9;
+  }
+  .nav-links.active a {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-stats {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .nav-title {
+    font-size: 1.2rem;
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
