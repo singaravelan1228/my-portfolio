@@ -10,7 +10,7 @@ function AwardsAchivements() {
    
   ];
   return (
-    <section className="section bg-gray">
+    <section className="section bg-gray awards-section">
       <div className="container slide-in">
         <h2 style={{ fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '1rem' }}>Course</h2>
         {Award.map((course, index) => (

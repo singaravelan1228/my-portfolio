@@ -19,7 +19,7 @@ function Contact() {
   };
 
   return (
-    <section className="section bg-light-gray">
+    <section className="section bg-light-gray contact-section">
       <div className="container slide-in">
         <h2 style={{ fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '1rem' }}>Contact Me</h2>
         <form onSubmit={handleSubmit} className="card" style={{ maxWidth: '500px', margin: '0 auto' }}>

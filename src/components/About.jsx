@@ -1,6 +1,6 @@
 function About() {
   return (
-    <section className="section bg-gray">
+    <section className="section bg-gray about-section">
       <div className="container slide-in">
         <h2 style={{ fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '1rem' }}>About Me</h2>
         <p style={{ fontSize: '1.125rem', marginBottom: '1rem' }}>

@@ -23,7 +23,7 @@ function Projects() {
     },
   ];
   return (
-    <section className="section bg-gray">
+    <section className="section bg-gray projects-section">
       <div className="container slide-in">
         <h2 style={{ fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '1rem' }}>Projects</h2>
         {projects.map((project, index) => (

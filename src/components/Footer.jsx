@@ -20,7 +20,7 @@ function Footer() {
               setCounts((prev) => ({ ...prev, [key]: Math.floor(start) }));
             }, 16);
           };
-          animateCounter(2, 'projects', 2, 2000); // 5 projects, 2s
+          animateCounter(3, 'projects', 3, 2000); // 5 projects, 2s
           animateCounter(0.6, 'experience', 0.6, 2000); // 3 years, 2s
           animateCounter(7, 'skills', 7, 2000); // 10 skills, 2s
           observer.disconnect();

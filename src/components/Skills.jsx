@@ -12,7 +12,7 @@ function Skills() {
   ];
 
   return (
-    <section className="section bg-light-gray">
+    <section className="section bg-light-gray skills-section">
       <div className="container slide-in">
         <h2 style={{ fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '1rem' }}>
           Technical Skills
